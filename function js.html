@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+// without parameter
+function demo(){
+  console.log("Hello js");
+}
+ demo();
+//  function calling
+
+// with parameter
+function demo1(text){
+console.log("Hello"+ text);
+}
+demo1("React");
+
+function cal(a,b=9){
+  console.log("addition of two number is:" + (a+b));
+}
+cal(12);
+
+// Anonymous In JavaScript, an anonymous function is a function without a name.
+// It’s often used for short-term tasks, passed as arguments to other functions, or assigned to variables.
+
+let msg=function(){
+  console.log("Hello Advanced JS");
+}
+msg();
+
+// shore code for above function i.e. arrow function
+
+let msg1=()=>console.log ("Hello function as an arrow");
+msg1();
+
+// arrow function using multiple
+
+let add = (a,b)=>{
+  console.log("First number is " +a);
+  console.log("Second number is " +b);
+console.log("addition of two number is " + (a+b));
+}
+add(4,5);
+
+// An IIFE (Immediately Invoked Function Expression) in JavaScript is a function that is defined and executed immediately after its creation.
+// It’s often used to create a private scope and avoid polluting the global namespace.
+
+(function(){
+  console.log("IIFE in JS")
+})();
+
+// IIFE using arrow
+(()=>console.log("IIFE using arrow"))();
+
+// Callback function :-callback function in JavaScript, including both synchronous and asynchronous use cases.
+
+function mul(callback){
+  var num1=10;
+  console.log("First Value is : " +num1);
+  var num2=20;
+  console.log("Second Value is : " +num2);
+  var res=num1*num2;
+  callback(res);
+}
+
+function result(res){
+  console.log("Multiplication is :" + res);
+}
+mul(result);
+
+// callback function using settimeout API
+function msg2(){
+  
+  document.writeln("Hello");
+}
+function loading(){
+  document.writeln("loading.......");
+}
+setTimeout(msg2,2000);
+loading();
+
+// map filter and reduce
+// The map() method is used to create a new array by applying a function to each element of an existing array. It does not modify the original array but returns a new one with the transformed elements.
+
+let num=[3,4,5,7];
+let finalresult = num.map(n=>n*2);
+console.log(finalresult);
+
+// The filter method in JavaScript is a powerful tool for creating a new array with elements that pass a specified test implemented by a provided function. This method is particularly useful for tasks such as filtering out unwanted elements from an array based on certain criteria.
+
+let finalresult1=num.filter(n=>(n>3));
+console.log(finalresult1);
+
+// reduce method ;- The reduce() method in JavaScript is used to iterate over an array and reduce it to a single value by applying a callback function to each element.
+
+let finalresult2=num.reduce((total,n)=>total+n);
+console.log(finalresult2);
+
+// promises :- Promises are objects that represent the eventual completion (or failure) of an asynchronous operation.
+
+let promise = new Promise(function(resolve,reject){
+  let age = 25;
+  if(age>=18){
+    resolve("valid age");
+  }
+  else{
+    reject("Wait for next year");
+  }
+});
+promise.then(result=>console.log(result)).
+catch(error=>console.log(error)).
+finally (msg=>console.log("Done"));
+
+
+// async await:-The async/await syntax is a modern way to handle asynchronous operations in JavaScript, built on top of Promises. It allows you to write asynchronous code that looks and behaves like synchronous code, improving readability and maintainability
+
+// JSON:-JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy to read and write for humans and easy to parse and generate for machines. It is often used to transmit data between a server and a web application, as it is both language-independent and self-describing.
+
+
+
+async function userData(){
+  try{
+    let data= await fetch ('https://dummyjson.com/products');
+    let updatedData = await data.json();
+    console.log(updatedData);
+
+  }
+  catch(error){
+    console.log("Not fetched" +error);
+  }
+}
+userData();
+
+  </script>
+</body>
+</html>
