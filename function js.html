@@ -129,12 +129,33 @@ async function userData(){
     let updatedData = await data.json();
     console.log(updatedData);
 
+
   }
   catch(error){
     console.log("Not fetched" +error);
   }
 }
 userData();
+
+
+// Local Stroage :-Local storage in JavaScript allows you to store key-value pairs in a web browser with no expiration date. This means the data persists even after the browser is closed and reopened, making it useful for storing user preferences, session data, or any other information that needs to be retained across sessions.
+
+let userInfo={
+  name:"John",
+  age:29,
+mob:7895479846,
+eMail:"john245@gmail.com"
+}
+// convert JSON object to string 
+localStorage.setItem('prefrences',JSON.stringify(userInfo));
+
+
+// Retrive the string and parse it back into an objects
+let storagePreference=JSON.parse(localStorage.getItem('prefrences'));
+console.log(storagePreference.name);
+
+
+
 
   </script>
 </body>
