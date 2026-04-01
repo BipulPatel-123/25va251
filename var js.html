@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Controls</title>
+    <style>
+        body{
+            text-align:center;
+            font-family:Arial;
+            background-color:white;
+        }
+
+        h1{
+            font-size:30px;
+        }
+
+        button{
+            margin:5px;
+            padding:10px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="heading">My Heading</h1>
+
+<button onclick="changeHeading()">Change Heading</button>
+<button onclick="changeBackground()">Change Background</button>
+<button onclick="increaseFont()">Increase Font Size</button>
+<button onclick="resetPage()">Reset</button>
+
+<script>
+
+let defaultText = "My Heading";
+let fontSize = 30;
+
+function changeHeading(){
+    document.getElementById("heading").innerText = "Heading Changed!";
+}
+
+function changeBackground(){
+    document.body.style.backgroundColor = "lightblue";
+}
+
+function increaseFont(){
+    fontSize += 5;
+    document.getElementById("heading").style.fontSize = fontSize + "px";
+}
+
+function resetPage(){
+    document.getElementById("heading").innerText = defaultText;
+    document.body.style.backgroundColor = "white";
+    fontSize = 30;
+    document.getElementById("heading").style.fontSize = fontSize + "px";
+}
+
+</script>
+
+</body>
+</html>
