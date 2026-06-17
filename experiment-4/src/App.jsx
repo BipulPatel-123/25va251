@@ -3,7 +3,7 @@ import "./App.css"
 
 function App() {
   const students = [
-    { name: "Charu Patel", course: "CSE(AIML)", marks: "98" },
+    { name: "Charu Singh", course: "CSE(AIML)", marks: "98" },
     { name: "Dhruv Sharma", course: "Computer Science", marks: "94" },
     { name: "Bipul Patel", course: "Information Technology", marks: "89" },
     { name: "Akshit Satti", course: "Cyber Security", marks: "96" },
