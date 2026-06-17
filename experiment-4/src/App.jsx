@@ -8,7 +8,6 @@ function App() {
     { name: "Bipul Patel", course: "Information Technology", marks: "89" },
     { name: "Akshit Satti", course: "Cyber Security", marks: "96" },
   ]
-
   return (
     <div className="app-container">
       <div className="student-grid">
