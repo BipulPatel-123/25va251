@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife | Unleash Your Potential</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Header & Navigation -->
+    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
+        <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-[#bef264]">FITLIFE</div>
+            <ul class="flex flex-col md:flex-row gap-4 md:gap-10 mt-4 md:mt-0 text-center uppercase text-sm font-semibold tracking-widest text-zinc-400">
+                <li class="hover:text-white cursor-pointer transition">Home</li>
+                <li class="hover:text-white cursor-pointer transition">Programs</li>
+                <li class="hover:text-white cursor-pointer transition">Trainers</li>
+                <li class="hover:text-white cursor-pointer transition">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="fitness.png" alt="Fitness" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-5xl md:text-8xl font-black mb-6 leading-none">NO PAIN<br><span class="text-[#bef264]">NO GAIN.</span></h1>
+            <p class="text-zinc-400 max-w-lg mx-auto mb-10 text-lg">Push your limits with world-class training programs designed to transform your body and mind.</p>
+            <button class="bg-[#bef264] text-black px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform active:scale-95">
+                JOIN NOW
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 px-6 bg-zinc-950">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center md:text-left">ELITE PROGRAMS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group bg-zinc-900 p-10 rounded-3xl border border-white/5 hover:border-[#bef264]/40 transition-all">
+                    <div class="w-14 h-14 bg-[#bef264]/10 rounded-2xl flex items-center justify-center mb-8">
+                        <svg class="w-8 h-8 text-[#bef264]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Weight Training</h3>
+                    <p class="text-zinc-500 mb-8">Build explosive strength and muscle mass with our advanced lifting protocols.</p>
+                    <a href="#" class="text-[#bef264] font-semibold group-hover:underline">Explore Program &rarr;</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group bg-zinc-900 p-10 rounded-3xl border border-white/5 hover:border-[#bef264]/40 transition-all">
+                    <div class="w-14 h-14 bg-[#bef264]/10 rounded-2xl flex items-center justify-center mb-8">
+                        <svg class="w-8 h-8 text-[#bef264]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Yoga Classes</h3>
+                    <p class="text-zinc-500 mb-8">Master your mobility and find inner peace with our meditative yoga sessions.</p>
+                    <a href="#" class="text-[#bef264] font-semibold group-hover:underline">Explore Program &rarr;</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-zinc-900 p-10 rounded-3xl border border-white/5 hover:border-[#bef264]/40 transition-all">
+                    <div class="w-14 h-14 bg-[#bef264]/10 rounded-2xl flex items-center justify-center mb-8">
+                        <svg class="w-8 h-8 text-[#bef264]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Diet Plans</h3>
+                    <p class="text-zinc-500 mb-8">Scientifically crafted nutrition plans to fuel your specific fitness goals.</p>
+                    <a href="#" class="text-[#bef264] font-semibold group-hover:underline">Explore Program &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 text-center text-zinc-500 text-sm">
+        <div class="container mx-auto px-6">
+            <div class="mb-6">
+                <span class="text-white font-bold mr-4">Follow Us:</span>
+                <span class="hover:text-[#bef264] cursor-pointer mx-2">Instagram</span>
+                <span class="hover:text-[#bef264] cursor-pointer mx-2">Facebook</span>
+                <span class="hover:text-[#bef264] cursor-pointer mx-2">YouTube</span>
+            </div>
+            <p>&copy; 2026 FitLife Evolution. Built for the bold.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
